@@ -102,7 +102,6 @@ func (mySqList *SqList) ListDelete(i int) bool{
 // 	return true
 // }
 
-
 //ListFind function is to find an element
 //此方法用来查找指定位置的元素
 func (mySqList *SqList) ListFind(i int) bool{
