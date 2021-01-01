@@ -64,6 +64,8 @@ func (mySqList *SqList) ListAppend(e int) bool{
 }
 
 //ListDelete function is to remove en element
+//此方法是用来删除指定位置元素 
+//method 1
 func (mySqList *SqList) ListDelete(i int) bool{
 	if i < 1 || i > mySqList.length + 1 {
 		fmt.Println("i不合法,请检查i")
@@ -82,6 +84,7 @@ func (mySqList *SqList) ListDelete(i int) bool{
 	
 }
 
+//ListDelete function is to remove element
 //method2
 // func (mySqList *SqList) ListDelete(i int) bool{
 // 	if i < 1 || i > mySqList.length + 1 {
@@ -98,6 +101,7 @@ func (mySqList *SqList) ListDelete(i int) bool{
 // 	mySqList.length--
 // 	return true
 // }
+
 
 //ListFind function is to find an element
 //此方法用来查找指定位置的元素
